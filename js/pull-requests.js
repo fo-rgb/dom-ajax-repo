@@ -1,4 +1,4 @@
-let Api = "{{url}}/https://api.github.com/users/codeyourfuture/repos"
+let Api = "https://api.github.com/users/codeyourfuture/repos "
 
 const btn = document.querySelector("#btn1")
 
@@ -10,26 +10,21 @@ function addText(event, texto) {
   let p = document.createElement('p')
   p.innerText = texto
   inputElement.innerText = `{{url}}/https://api.github.com/users/codeyourfuture/repos   `
-
+  
+  console.log(inputElement)
   
 }
 let texto = Api
 
 function reposGit() {
-  if (texto === texto) {
-   return texto.innerText = `{{url}}/https://api.github.com/users/codeyourfuture/repos `
-
-  }
-   
-
-
+  Api = `{{url}}/https://api.github.com/users/codeyourfuture/repos `
 }
 
 
 
 btn.addEventListener('click', event => {
   addText(event, '')
-  
+  reposGit()
 })
 
 // btn.addEventListener('click',reposGit)
